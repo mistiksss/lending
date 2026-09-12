@@ -25,11 +25,18 @@
   <img src="public/stills/cabin.jpg" alt="Интерьер" width="300" />
 </p>
 
-<p align="center">
-  | | | |
-  |:---:|:---:|:---:|
-  | Мощность | Разгон 0–100 км/ч | Салон |
-  | **666 л. с.** | **3,5 с** | **5 мест** |
-</p>
-
+<div align="center">
+  <table>
+    <tr>
+      <th align="center">Мощность</th>
+      <th align="center">Разгон 0–100 км/ч</th>
+      <th align="center">Салон</th>
+    </tr>
+    <tr>
+      <td align="center"><b>666 л. с.</b></td>
+      <td align="center"><b>3,5 с</b></td>
+      <td align="center"><b>5 мест</b></td>
+    </tr>
+  </table>
+</div>
 В конце страницы — заявка: имя, телефон, комментарий. Цель — привести человека посмотреть автомобиль лично.
