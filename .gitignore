@@ -4,3 +4,4 @@ node_modules
 _preview
 *.log
 .DS_Store
+TEMPLATE.md
