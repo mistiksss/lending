@@ -1,16 +1,7 @@
 "use client";
 
 import { site } from "@/lib/site";
-
-function goTo(id: string) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  const top =
-    id === "top" || id === "forma"
-      ? 0
-      : el.getBoundingClientRect().top + window.scrollY - 12;
-  window.scrollTo({ top, behavior: "auto" });
-}
+import { goTo } from "@/lib/scroll";
 
 export function BrandNav() {
   return (
@@ -46,9 +37,13 @@ export function BrandNav() {
             </a>
           ))}
         </nav>
-        <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-mute">
-          {site.brand.product}
-        </p>
+        <button
+          type="button"
+          onClick={() => goTo(site.request.id)}
+          className="bg-solare px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-ink transition-colors hover:bg-solare-dim md:px-4"
+        >
+          {site.offer.nav}
+        </button>
       </div>
     </header>
   );

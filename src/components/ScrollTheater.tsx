@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "motion/react";
+import { goTo } from "@/lib/scroll";
 import { chapterOpacity, frameSrc, site } from "@/lib/site";
 
 const FRAME_COUNT = site.film.frameCount;
@@ -145,6 +146,16 @@ export function ScrollTheater() {
           <p className="mt-4 text-sm font-medium text-mute">
             {site.brand.variant} · {site.brand.detail}
           </p>
+          <p className="mt-4 max-w-md text-sm leading-relaxed text-paper/80">
+            {site.offer.line}
+          </p>
+          <button
+            type="button"
+            onClick={() => goTo(site.request.id)}
+            className="pointer-events-auto mt-5 bg-solare px-5 py-2.5 text-[12px] font-semibold uppercase tracking-[0.12em] text-ink transition-colors hover:bg-solare-dim"
+          >
+            {site.offer.hero}
+          </button>
         </div>
 
         {site.chapters.map((chapter) => {

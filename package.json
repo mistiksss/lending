@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start"
+    "start": "npx --yes serve out"
+  },
+  "engines": {
+    "node": ">=20"
   },
   "dependencies": {
     "motion": "^12.23.12",
